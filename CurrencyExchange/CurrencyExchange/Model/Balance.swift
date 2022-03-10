@@ -11,5 +11,5 @@ import Foundation
 struct Balance {
     
     var amount: Double = 0
-    var currency: Currency = Currency(symbol: CurrencySymbols.USD, code: CurrencyCodes.USD)
+    var currency: Currency = Currency(with: .USD)
 }

@@ -10,5 +10,7 @@ import SwiftUIFlux
 
 func appStateReducer(state: AppState, action: Action) -> AppState {
     var state = state
+    state.currencyState = currenyStateReducer(state: state.currencyState, action: action)
+     
     return state
 }

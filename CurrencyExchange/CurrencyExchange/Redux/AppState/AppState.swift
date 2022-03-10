@@ -11,6 +11,8 @@ import SwiftUIFlux
 
 struct AppState: FluxState {
     
+    var currencyState = CurrencyState()
+    var balanceState = BalanceState()
     
     
 }

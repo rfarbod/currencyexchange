@@ -19,7 +19,6 @@
 		13FAA78427DA54A4006BAA9D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA78327DA54A4006BAA9D /* Store.swift */; };
 		13FAA78727DA55B9006BAA9D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA78627DA55B9006BAA9D /* AppState.swift */; };
 		13FAA78A27DA55E8006BAA9D /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA78927DA55E8006BAA9D /* AppReducer.swift */; };
-		13FAA78D27DA563F006BAA9D /* ExchangeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA78C27DA563F006BAA9D /* ExchangeActions.swift */; };
 		13FAA79127DA5C82006BAA9D /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA79027DA5C82006BAA9D /* AppEnvironment.swift */; };
 		13FAA79327DA5FE4006BAA9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA79227DA5FE4006BAA9D /* Constants.swift */; };
 		13FAA79627DA6179006BAA9D /* CurrencyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA79527DA6179006BAA9D /* CurrencyCodes.swift */; };
@@ -30,6 +29,13 @@
 		13FAA7A227DA6776006BAA9D /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7A127DA6776006BAA9D /* URLRequestBuilder.swift */; };
 		13FAA7A427DA6793006BAA9D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7A327DA6793006BAA9D /* NetworkManager.swift */; };
 		13FAA7A627DA67F5006BAA9D /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7A527DA67F5006BAA9D /* Endpoints.swift */; };
+		13FAA7A827DA6BB2006BAA9D /* CurrencyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7A727DA6BB1006BAA9D /* CurrencyState.swift */; };
+		13FAA7AA27DA6C2B006BAA9D /* BalanceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7A927DA6C2B006BAA9D /* BalanceState.swift */; };
+		13FAA7AC27DA6C48006BAA9D /* CurrencyReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7AB27DA6C48006BAA9D /* CurrencyReducer.swift */; };
+		13FAA7AE27DA6C53006BAA9D /* BalanceReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7AD27DA6C53006BAA9D /* BalanceReducer.swift */; };
+		13FAA7B027DA6D07006BAA9D /* CurrencyActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7AF27DA6D07006BAA9D /* CurrencyActions.swift */; };
+		13FAA7B227DA6EDE006BAA9D /* BalanceActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7B127DA6EDE006BAA9D /* BalanceActions.swift */; };
+		13FAA7B427DA7305006BAA9D /* BalanceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7B327DA7305006BAA9D /* BalanceResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +69,6 @@
 		13FAA78327DA54A4006BAA9D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		13FAA78627DA55B9006BAA9D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		13FAA78927DA55E8006BAA9D /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
-		13FAA78C27DA563F006BAA9D /* ExchangeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeActions.swift; sourceTree = "<group>"; };
 		13FAA79027DA5C82006BAA9D /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		13FAA79227DA5FE4006BAA9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		13FAA79527DA6179006BAA9D /* CurrencyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCodes.swift; sourceTree = "<group>"; };
@@ -74,6 +79,13 @@
 		13FAA7A127DA6776006BAA9D /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		13FAA7A327DA6793006BAA9D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		13FAA7A527DA67F5006BAA9D /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		13FAA7A727DA6BB1006BAA9D /* CurrencyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyState.swift; sourceTree = "<group>"; };
+		13FAA7A927DA6C2B006BAA9D /* BalanceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceState.swift; sourceTree = "<group>"; };
+		13FAA7AB27DA6C48006BAA9D /* CurrencyReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyReducer.swift; sourceTree = "<group>"; };
+		13FAA7AD27DA6C53006BAA9D /* BalanceReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceReducer.swift; sourceTree = "<group>"; };
+		13FAA7AF27DA6D07006BAA9D /* CurrencyActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyActions.swift; sourceTree = "<group>"; };
+		13FAA7B127DA6EDE006BAA9D /* BalanceActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceActions.swift; sourceTree = "<group>"; };
+		13FAA7B327DA7305006BAA9D /* BalanceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				13FAA78627DA55B9006BAA9D /* AppState.swift */,
+				13FAA7A727DA6BB1006BAA9D /* CurrencyState.swift */,
+				13FAA7A927DA6C2B006BAA9D /* BalanceState.swift */,
 			);
 			path = AppState;
 			sourceTree = "<group>";
@@ -194,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				13FAA78927DA55E8006BAA9D /* AppReducer.swift */,
+				13FAA7AB27DA6C48006BAA9D /* CurrencyReducer.swift */,
+				13FAA7AD27DA6C53006BAA9D /* BalanceReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -201,7 +217,8 @@
 		13FAA78B27DA5630006BAA9D /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				13FAA78C27DA563F006BAA9D /* ExchangeActions.swift */,
+				13FAA7AF27DA6D07006BAA9D /* CurrencyActions.swift */,
+				13FAA7B127DA6EDE006BAA9D /* BalanceActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -232,6 +249,7 @@
 				13FAA79727DA63DF006BAA9D /* CurrencySymbols.swift */,
 				13FAA79927DA6523006BAA9D /* Currency.swift */,
 				13FAA79B27DA6565006BAA9D /* Balance.swift */,
+				13FAA7B327DA7305006BAA9D /* BalanceResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -392,22 +410,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13FAA7B227DA6EDE006BAA9D /* BalanceActions.swift in Sources */,
 				13FAA79127DA5C82006BAA9D /* AppEnvironment.swift in Sources */,
 				13FAA78427DA54A4006BAA9D /* Store.swift in Sources */,
 				13FAA75427DA5041006BAA9D /* ContentView.swift in Sources */,
-				13FAA78D27DA563F006BAA9D /* ExchangeActions.swift in Sources */,
 				13FAA75227DA5041006BAA9D /* CurrencyExchangeApp.swift in Sources */,
+				13FAA7A827DA6BB2006BAA9D /* CurrencyState.swift in Sources */,
 				13FAA78727DA55B9006BAA9D /* AppState.swift in Sources */,
 				13FAA79A27DA6524006BAA9D /* Currency.swift in Sources */,
 				13FAA7A227DA6776006BAA9D /* URLRequestBuilder.swift in Sources */,
 				13FAA79827DA63DF006BAA9D /* CurrencySymbols.swift in Sources */,
 				13FAA78A27DA55E8006BAA9D /* AppReducer.swift in Sources */,
 				13FAA79627DA6179006BAA9D /* CurrencyCodes.swift in Sources */,
+				13FAA7B427DA7305006BAA9D /* BalanceResult.swift in Sources */,
 				13FAA79F27DA6723006BAA9D /* ExchangeAPI.swift in Sources */,
 				13FAA7A427DA6793006BAA9D /* NetworkManager.swift in Sources */,
+				13FAA7B027DA6D07006BAA9D /* CurrencyActions.swift in Sources */,
+				13FAA7AA27DA6C2B006BAA9D /* BalanceState.swift in Sources */,
 				13FAA79C27DA6565006BAA9D /* Balance.swift in Sources */,
 				13FAA7A627DA67F5006BAA9D /* Endpoints.swift in Sources */,
+				13FAA7AC27DA6C48006BAA9D /* CurrencyReducer.swift in Sources */,
 				13FAA79327DA5FE4006BAA9D /* Constants.swift in Sources */,
+				13FAA7AE27DA6C53006BAA9D /* BalanceReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
