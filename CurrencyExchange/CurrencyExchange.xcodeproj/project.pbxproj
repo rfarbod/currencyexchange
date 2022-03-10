@@ -16,6 +16,10 @@
 		13FAA76F27DA5043006BAA9D /* CurrencyExchangeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA76E27DA5043006BAA9D /* CurrencyExchangeUITestsLaunchTests.swift */; };
 		13FAA77D27DA5060006BAA9D /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = 13FAA77C27DA5060006BAA9D /* SwiftUIFlux */; };
 		13FAA78027DA5087006BAA9D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 13FAA77F27DA5087006BAA9D /* Alamofire */; };
+		13FAA78427DA54A4006BAA9D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA78327DA54A4006BAA9D /* Store.swift */; };
+		13FAA78727DA55B9006BAA9D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA78627DA55B9006BAA9D /* AppState.swift */; };
+		13FAA78A27DA55E8006BAA9D /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA78927DA55E8006BAA9D /* AppReducer.swift */; };
+		13FAA78D27DA563F006BAA9D /* ExchangeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA78C27DA563F006BAA9D /* ExchangeActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		13FAA76827DA5043006BAA9D /* CurrencyExchangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyExchangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FAA76C27DA5043006BAA9D /* CurrencyExchangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeUITests.swift; sourceTree = "<group>"; };
 		13FAA76E27DA5043006BAA9D /* CurrencyExchangeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		13FAA78327DA54A4006BAA9D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		13FAA78627DA55B9006BAA9D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		13FAA78927DA55E8006BAA9D /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		13FAA78C27DA563F006BAA9D /* ExchangeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeActions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +143,45 @@
 		13FAA78127DA512A006BAA9D /* Redux */ = {
 			isa = PBXGroup;
 			children = (
+				13FAA78B27DA5630006BAA9D /* Actions */,
+				13FAA78827DA55D5006BAA9D /* Reducers */,
+				13FAA78527DA54CF006BAA9D /* AppState */,
+				13FAA78227DA5495006BAA9D /* Store */,
 			);
 			path = Redux;
+			sourceTree = "<group>";
+		};
+		13FAA78227DA5495006BAA9D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				13FAA78327DA54A4006BAA9D /* Store.swift */,
+			);
+			name = Store;
+			path = "ئفخقث";
+			sourceTree = "<group>";
+		};
+		13FAA78527DA54CF006BAA9D /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				13FAA78627DA55B9006BAA9D /* AppState.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		13FAA78827DA55D5006BAA9D /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				13FAA78927DA55E8006BAA9D /* AppReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		13FAA78B27DA5630006BAA9D /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				13FAA78C27DA563F006BAA9D /* ExchangeActions.swift */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13FAA78427DA54A4006BAA9D /* Store.swift in Sources */,
 				13FAA75427DA5041006BAA9D /* ContentView.swift in Sources */,
+				13FAA78D27DA563F006BAA9D /* ExchangeActions.swift in Sources */,
 				13FAA75227DA5041006BAA9D /* CurrencyExchangeApp.swift in Sources */,
+				13FAA78727DA55B9006BAA9D /* AppState.swift in Sources */,
+				13FAA78A27DA55E8006BAA9D /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
