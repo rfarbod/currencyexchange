@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": "master",
+          "revision": "2d085513c48a17082859fede7e6530dfb971f554",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftUIFlux",
+        "repositoryURL": "https://github.com/Dimillian/SwiftUIFlux",
+        "state": {
+          "branch": "master",
+          "revision": "39b885558fdee277f7ca2a8c81900123e9bc436f",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
