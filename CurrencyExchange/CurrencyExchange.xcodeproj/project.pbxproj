@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13338C9127DE078B00B8BD1D /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13338C9027DE078B00B8BD1D /* ExchangeRate.swift */; };
 		1355659427DD3F0D007554D0 /* ExchangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659327DD3F0D007554D0 /* ExchangeView.swift */; };
 		1355659627DD3F88007554D0 /* FlagBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659527DD3F88007554D0 /* FlagBackground.swift */; };
 		1355659827DD3FB9007554D0 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659727DD3FB9007554D0 /* TextInput.swift */; };
@@ -65,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13338C8F27DDFDED00B8BD1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		13338C9027DE078B00B8BD1D /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		1355659327DD3F0D007554D0 /* ExchangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeView.swift; sourceTree = "<group>"; };
 		1355659527DD3F88007554D0 /* FlagBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagBackground.swift; sourceTree = "<group>"; };
 		1355659727DD3FB9007554D0 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
@@ -156,6 +159,7 @@
 		13FAA75027DA5041006BAA9D /* CurrencyExchange */ = {
 			isa = PBXGroup;
 			children = (
+				13338C8F27DDFDED00B8BD1D /* Info.plist */,
 				13FAA75527DA5043006BAA9D /* Assets.xcassets */,
 				13FAA7BE27DBC538006BAA9D /* Extension */,
 				13FAA7B527DBA98E006BAA9D /* View */,
@@ -269,6 +273,7 @@
 				13FAA79927DA6523006BAA9D /* Currency.swift */,
 				13FAA79B27DA6565006BAA9D /* Balance.swift */,
 				13FAA7B327DA7305006BAA9D /* BalanceResult.swift */,
+				13338C9027DE078B00B8BD1D /* ExchangeRate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -466,6 +471,7 @@
 				13FAA7B727DBA9B5006BAA9D /* BalanceView.swift in Sources */,
 				13FAA78727DA55B9006BAA9D /* AppState.swift in Sources */,
 				13FAA79A27DA6524006BAA9D /* Currency.swift in Sources */,
+				13338C9127DE078B00B8BD1D /* ExchangeRate.swift in Sources */,
 				13FAA7A227DA6776006BAA9D /* URLRequestBuilder.swift in Sources */,
 				13FAA79827DA63DF006BAA9D /* CurrencySymbols.swift in Sources */,
 				13FAA78A27DA55E8006BAA9D /* AppReducer.swift in Sources */,
@@ -647,6 +653,7 @@
 				DEVELOPMENT_TEAM = T8D29U4J3F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrencyExchange/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -676,6 +683,7 @@
 				DEVELOPMENT_TEAM = T8D29U4J3F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrencyExchange/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
