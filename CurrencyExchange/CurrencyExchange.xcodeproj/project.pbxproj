@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		13338C9127DE078B00B8BD1D /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13338C9027DE078B00B8BD1D /* ExchangeRate.swift */; };
+		13338C9327DE1BC200B8BD1D /* ToTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13338C9227DE1BC200B8BD1D /* ToTextInput.swift */; };
 		1355659427DD3F0D007554D0 /* ExchangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659327DD3F0D007554D0 /* ExchangeView.swift */; };
 		1355659627DD3F88007554D0 /* FlagBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659527DD3F88007554D0 /* FlagBackground.swift */; };
-		1355659827DD3FB9007554D0 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659727DD3FB9007554D0 /* TextInput.swift */; };
+		1355659827DD3FB9007554D0 /* FromTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659727DD3FB9007554D0 /* FromTextInput.swift */; };
 		1355659A27DD3FCE007554D0 /* OuterShadowBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659927DD3FCE007554D0 /* OuterShadowBackground.swift */; };
 		1355659C27DD3FFF007554D0 /* InnerShadowBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659B27DD3FFF007554D0 /* InnerShadowBackground.swift */; };
 		1355659E27DD5377007554D0 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659D27DD5377007554D0 /* SectionTitle.swift */; };
@@ -68,9 +69,10 @@
 /* Begin PBXFileReference section */
 		13338C8F27DDFDED00B8BD1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		13338C9027DE078B00B8BD1D /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		13338C9227DE1BC200B8BD1D /* ToTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToTextInput.swift; sourceTree = "<group>"; };
 		1355659327DD3F0D007554D0 /* ExchangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeView.swift; sourceTree = "<group>"; };
 		1355659527DD3F88007554D0 /* FlagBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagBackground.swift; sourceTree = "<group>"; };
-		1355659727DD3FB9007554D0 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		1355659727DD3FB9007554D0 /* FromTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromTextInput.swift; sourceTree = "<group>"; };
 		1355659927DD3FCE007554D0 /* OuterShadowBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterShadowBackground.swift; sourceTree = "<group>"; };
 		1355659B27DD3FFF007554D0 /* InnerShadowBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerShadowBackground.swift; sourceTree = "<group>"; };
 		1355659D27DD5377007554D0 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
@@ -302,7 +304,8 @@
 				13FAA75327DA5041006BAA9D /* ContentView.swift */,
 				13FAA7B627DBA9B5006BAA9D /* BalanceView.swift */,
 				1355659327DD3F0D007554D0 /* ExchangeView.swift */,
-				1355659727DD3FB9007554D0 /* TextInput.swift */,
+				1355659727DD3FB9007554D0 /* FromTextInput.swift */,
+				13338C9227DE1BC200B8BD1D /* ToTextInput.swift */,
 				1355659527DD3F88007554D0 /* FlagBackground.swift */,
 				1355659927DD3FCE007554D0 /* OuterShadowBackground.swift */,
 				1355659B27DD3FFF007554D0 /* InnerShadowBackground.swift */,
@@ -463,6 +466,7 @@
 				1355659627DD3F88007554D0 /* FlagBackground.swift in Sources */,
 				13FAA7BD27DBBB9E006BAA9D /* Colors.swift in Sources */,
 				1355659A27DD3FCE007554D0 /* OuterShadowBackground.swift in Sources */,
+				13338C9327DE1BC200B8BD1D /* ToTextInput.swift in Sources */,
 				13FAA79127DA5C82006BAA9D /* AppEnvironment.swift in Sources */,
 				13FAA78427DA54A4006BAA9D /* Store.swift in Sources */,
 				13FAA75427DA5041006BAA9D /* ContentView.swift in Sources */,
@@ -486,7 +490,7 @@
 				13FAA79C27DA6565006BAA9D /* Balance.swift in Sources */,
 				13FAA7A627DA67F5006BAA9D /* Endpoints.swift in Sources */,
 				1355659C27DD3FFF007554D0 /* InnerShadowBackground.swift in Sources */,
-				1355659827DD3FB9007554D0 /* TextInput.swift in Sources */,
+				1355659827DD3FB9007554D0 /* FromTextInput.swift in Sources */,
 				13FAA7AC27DA6C48006BAA9D /* CurrencyReducer.swift in Sources */,
 				13FAA79327DA5FE4006BAA9D /* Constants.swift in Sources */,
 				13FAA7AE27DA6C53006BAA9D /* BalanceReducer.swift in Sources */,
