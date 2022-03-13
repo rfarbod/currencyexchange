@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1355659427DD3F0D007554D0 /* ExchangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659327DD3F0D007554D0 /* ExchangeView.swift */; };
+		1355659627DD3F88007554D0 /* FlagBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659527DD3F88007554D0 /* FlagBackground.swift */; };
+		1355659827DD3FB9007554D0 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659727DD3FB9007554D0 /* TextInput.swift */; };
+		1355659A27DD3FCE007554D0 /* OuterShadowBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659927DD3FCE007554D0 /* OuterShadowBackground.swift */; };
+		1355659C27DD3FFF007554D0 /* InnerShadowBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659B27DD3FFF007554D0 /* InnerShadowBackground.swift */; };
+		1355659E27DD5377007554D0 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659D27DD5377007554D0 /* SectionTitle.swift */; };
 		13FAA75227DA5041006BAA9D /* CurrencyExchangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA75127DA5041006BAA9D /* CurrencyExchangeApp.swift */; };
 		13FAA75427DA5041006BAA9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA75327DA5041006BAA9D /* ContentView.swift */; };
 		13FAA75627DA5043006BAA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FAA75527DA5043006BAA9D /* Assets.xcassets */; };
@@ -36,6 +42,9 @@
 		13FAA7B027DA6D07006BAA9D /* CurrencyActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7AF27DA6D07006BAA9D /* CurrencyActions.swift */; };
 		13FAA7B227DA6EDE006BAA9D /* BalanceActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7B127DA6EDE006BAA9D /* BalanceActions.swift */; };
 		13FAA7B427DA7305006BAA9D /* BalanceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7B327DA7305006BAA9D /* BalanceResult.swift */; };
+		13FAA7B727DBA9B5006BAA9D /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7B627DBA9B5006BAA9D /* BalanceView.swift */; };
+		13FAA7BA27DBADA1006BAA9D /* Neumorphic in Frameworks */ = {isa = PBXBuildFile; productRef = 13FAA7B927DBADA1006BAA9D /* Neumorphic */; };
+		13FAA7BD27DBBB9E006BAA9D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FAA7BC27DBBB9E006BAA9D /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +65,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1355659327DD3F0D007554D0 /* ExchangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeView.swift; sourceTree = "<group>"; };
+		1355659527DD3F88007554D0 /* FlagBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagBackground.swift; sourceTree = "<group>"; };
+		1355659727DD3FB9007554D0 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		1355659927DD3FCE007554D0 /* OuterShadowBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterShadowBackground.swift; sourceTree = "<group>"; };
+		1355659B27DD3FFF007554D0 /* InnerShadowBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerShadowBackground.swift; sourceTree = "<group>"; };
+		1355659D27DD5377007554D0 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 		13FAA74E27DA5041006BAA9D /* CurrencyExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FAA75127DA5041006BAA9D /* CurrencyExchangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeApp.swift; sourceTree = "<group>"; };
 		13FAA75327DA5041006BAA9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +101,8 @@
 		13FAA7AF27DA6D07006BAA9D /* CurrencyActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyActions.swift; sourceTree = "<group>"; };
 		13FAA7B127DA6EDE006BAA9D /* BalanceActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceActions.swift; sourceTree = "<group>"; };
 		13FAA7B327DA7305006BAA9D /* BalanceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceResult.swift; sourceTree = "<group>"; };
+		13FAA7B627DBA9B5006BAA9D /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		13FAA7BC27DBBB9E006BAA9D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +112,7 @@
 			files = (
 				13FAA77D27DA5060006BAA9D /* SwiftUIFlux in Frameworks */,
 				13FAA78027DA5087006BAA9D /* Alamofire in Frameworks */,
+				13FAA7BA27DBADA1006BAA9D /* Neumorphic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +156,13 @@
 		13FAA75027DA5041006BAA9D /* CurrencyExchange */ = {
 			isa = PBXGroup;
 			children = (
+				13FAA75527DA5043006BAA9D /* Assets.xcassets */,
+				13FAA7BE27DBC538006BAA9D /* Extension */,
+				13FAA7B527DBA98E006BAA9D /* View */,
 				13FAA79427DA610D006BAA9D /* Model */,
 				13FAA78E27DA5C25006BAA9D /* Network */,
 				13FAA78127DA512A006BAA9D /* Redux */,
 				13FAA75127DA5041006BAA9D /* CurrencyExchangeApp.swift */,
-				13FAA75327DA5041006BAA9D /* ContentView.swift */,
-				13FAA75527DA5043006BAA9D /* Assets.xcassets */,
 				13FAA75727DA5043006BAA9D /* Preview Content */,
 			);
 			path = CurrencyExchange;
@@ -272,6 +291,29 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		13FAA7B527DBA98E006BAA9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13FAA75327DA5041006BAA9D /* ContentView.swift */,
+				13FAA7B627DBA9B5006BAA9D /* BalanceView.swift */,
+				1355659327DD3F0D007554D0 /* ExchangeView.swift */,
+				1355659727DD3FB9007554D0 /* TextInput.swift */,
+				1355659527DD3F88007554D0 /* FlagBackground.swift */,
+				1355659927DD3FCE007554D0 /* OuterShadowBackground.swift */,
+				1355659B27DD3FFF007554D0 /* InnerShadowBackground.swift */,
+				1355659D27DD5377007554D0 /* SectionTitle.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13FAA7BE27DBC538006BAA9D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				13FAA7BC27DBBB9E006BAA9D /* Colors.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +333,7 @@
 			packageProductDependencies = (
 				13FAA77C27DA5060006BAA9D /* SwiftUIFlux */,
 				13FAA77F27DA5087006BAA9D /* Alamofire */,
+				13FAA7B927DBADA1006BAA9D /* Neumorphic */,
 			);
 			productName = CurrencyExchange;
 			productReference = 13FAA74E27DA5041006BAA9D /* CurrencyExchange.app */;
@@ -367,6 +410,7 @@
 			packageReferences = (
 				13FAA77B27DA5060006BAA9D /* XCRemoteSwiftPackageReference "SwiftUIFlux" */,
 				13FAA77E27DA5087006BAA9D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				13FAA7B827DBADA1006BAA9D /* XCRemoteSwiftPackageReference "neumorphic" */,
 			);
 			productRefGroup = 13FAA74F27DA5041006BAA9D /* Products */;
 			projectDirPath = "";
@@ -411,24 +455,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				13FAA7B227DA6EDE006BAA9D /* BalanceActions.swift in Sources */,
+				1355659627DD3F88007554D0 /* FlagBackground.swift in Sources */,
+				13FAA7BD27DBBB9E006BAA9D /* Colors.swift in Sources */,
+				1355659A27DD3FCE007554D0 /* OuterShadowBackground.swift in Sources */,
 				13FAA79127DA5C82006BAA9D /* AppEnvironment.swift in Sources */,
 				13FAA78427DA54A4006BAA9D /* Store.swift in Sources */,
 				13FAA75427DA5041006BAA9D /* ContentView.swift in Sources */,
 				13FAA75227DA5041006BAA9D /* CurrencyExchangeApp.swift in Sources */,
 				13FAA7A827DA6BB2006BAA9D /* CurrencyState.swift in Sources */,
+				13FAA7B727DBA9B5006BAA9D /* BalanceView.swift in Sources */,
 				13FAA78727DA55B9006BAA9D /* AppState.swift in Sources */,
 				13FAA79A27DA6524006BAA9D /* Currency.swift in Sources */,
 				13FAA7A227DA6776006BAA9D /* URLRequestBuilder.swift in Sources */,
 				13FAA79827DA63DF006BAA9D /* CurrencySymbols.swift in Sources */,
 				13FAA78A27DA55E8006BAA9D /* AppReducer.swift in Sources */,
+				1355659427DD3F0D007554D0 /* ExchangeView.swift in Sources */,
 				13FAA79627DA6179006BAA9D /* CurrencyCodes.swift in Sources */,
 				13FAA7B427DA7305006BAA9D /* BalanceResult.swift in Sources */,
 				13FAA79F27DA6723006BAA9D /* ExchangeAPI.swift in Sources */,
 				13FAA7A427DA6793006BAA9D /* NetworkManager.swift in Sources */,
+				1355659E27DD5377007554D0 /* SectionTitle.swift in Sources */,
 				13FAA7B027DA6D07006BAA9D /* CurrencyActions.swift in Sources */,
 				13FAA7AA27DA6C2B006BAA9D /* BalanceState.swift in Sources */,
 				13FAA79C27DA6565006BAA9D /* Balance.swift in Sources */,
 				13FAA7A627DA67F5006BAA9D /* Endpoints.swift in Sources */,
+				1355659C27DD3FFF007554D0 /* InnerShadowBackground.swift in Sources */,
+				1355659827DD3FB9007554D0 /* TextInput.swift in Sources */,
 				13FAA7AC27DA6C48006BAA9D /* CurrencyReducer.swift in Sources */,
 				13FAA79327DA5FE4006BAA9D /* Constants.swift in Sources */,
 				13FAA7AE27DA6C53006BAA9D /* BalanceReducer.swift in Sources */,
@@ -776,6 +828,14 @@
 				kind = branch;
 			};
 		};
+		13FAA7B827DBADA1006BAA9D /* XCRemoteSwiftPackageReference "neumorphic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/costachung/neumorphic/";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -788,6 +848,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 13FAA77E27DA5087006BAA9D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		13FAA7B927DBADA1006BAA9D /* Neumorphic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13FAA7B827DBADA1006BAA9D /* XCRemoteSwiftPackageReference "neumorphic" */;
+			productName = Neumorphic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

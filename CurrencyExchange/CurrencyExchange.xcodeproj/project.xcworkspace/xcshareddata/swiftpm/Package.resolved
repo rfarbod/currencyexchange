@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Neumorphic",
+        "repositoryURL": "https://github.com/costachung/neumorphic/",
+        "state": {
+          "branch": "master",
+          "revision": "ece63559ba075e2546600450c37cde82cc463537",
+          "version": null
+        }
+      },
+      {
         "package": "SwiftUIFlux",
         "repositoryURL": "https://github.com/Dimillian/SwiftUIFlux",
         "state": {
