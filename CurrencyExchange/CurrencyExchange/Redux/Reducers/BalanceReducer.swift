@@ -16,6 +16,9 @@ func balanceStateReducer(state: BalanceState, action: Action) -> BalanceState {
             return balance.currency.symbol == action.currency.symbol
         }){
             state.balances[indexOfBalance].amount += action.amount
+            if action.amount < 0 {
+                state.balances[indexOfBalance].totalComissionFee += store.state.currencyState.currentCommissionFee
+            }
         }else{
             state.balances.append(Balance(amount: action.amount, currency: action.currency))
         }

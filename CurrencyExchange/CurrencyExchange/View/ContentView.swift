@@ -26,7 +26,7 @@ struct ContentView: View {
     }
     
     var totalCommissionFee: Double {
-        return store.state.currencyState.totalExchangeComisson
+        return balances[index].totalComissionFee
     }
     
     var currentCommissionFee: Double {
@@ -79,7 +79,7 @@ struct ContentView: View {
                 
                 Button(action: {
                     let fromCurrency = store.state.currencyState.selectedFromCurrency
-                    let fromAmount   = store.state.currencyState.selectedFromAmount
+                    var fromAmount   = store.state.currencyState.selectedFromAmount
                     let toCurrency   =  store.state.currencyState.selectedToCurrency
                     let toAmount     =  store.state.currencyState.selectedToAmount
                     let fromBalance  = store.state.balanceState.balances.first { balance in
@@ -91,7 +91,8 @@ struct ContentView: View {
                     }else {
                         shouldShowError = false
                         shouldShowSuccess = true
-                        if store.state.currencyState.exchangeCount > 5 {
+                        if store.state.currencyState.exchangeCount >= 5 {
+                            fromAmount += currentCommissionFee
                             store.dispatch(action: CurrencyActions.SetCurrentCommission(amount: (0.7/100) * fromAmount))
                         }
                     store.dispatch(action: CurrencyActions.SetExchangeCount())
