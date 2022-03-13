@@ -14,4 +14,5 @@ struct Balance: Identifiable {
     
     var amount: Double = 0
     var currency: Currency = Currency(with: .USD)
+    var totalComissionFee: Double = 0 
 }

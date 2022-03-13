@@ -13,7 +13,9 @@ import AlertToast
 struct ContentView: View {
     
     @State var index = 0
-    @State var shouldShowAlert: Bool = false
+    @State var shouldShowError: Bool = false
+    @State var shouldShowSuccess: Bool = false
+    
     @EnvironmentObject var store : Store<AppState>
     
     var fromCurrency: CurrencyCodes {
@@ -21,6 +23,14 @@ struct ContentView: View {
     }
     var balances: [Balance] {
         return store.state.balanceState.balances
+    }
+    
+    var totalCommissionFee: Double {
+        return store.state.currencyState.totalExchangeComisson
+    }
+    
+    var currentCommissionFee: Double {
+        return store.state.currencyState.currentCommissionFee
     }
     
     init() {
@@ -59,11 +69,11 @@ struct ContentView: View {
                 
                 ExchangeView()
                        
-                Text("Comission fee: \(0)")
+                Text("Comission fee: \(String(format: "%.2f", currentCommissionFee))")
                     .foregroundColor(.secondaryColor)
                     .font(.caption)
                 
-                Text("Total comission fee: \(0)")
+                Text("Total comission fee: \(String(format: "%.2f", totalCommissionFee))")
                     .foregroundColor(.secondaryColor)
                     .font(.caption)
                 
@@ -76,8 +86,15 @@ struct ContentView: View {
                         return balance.currency.symbol == fromCurrency.symbol
                     }?.amount
                     if fromAmount > fromBalance ?? 0 {
-                        shouldShowAlert = true
+                        shouldShowError = true
+                        shouldShowSuccess = false
                     }else {
+                        shouldShowError = false
+                        shouldShowSuccess = true
+                        if store.state.currencyState.exchangeCount > 5 {
+                            store.dispatch(action: CurrencyActions.SetCurrentCommission(amount: (0.7/100) * fromAmount))
+                        }
+                    store.dispatch(action: CurrencyActions.SetExchangeCount())
                     store.dispatch(action: BalanceActions.SetBalance(currency: fromCurrency, amount: -(fromAmount)))
                     store.dispatch(action: BalanceActions.SetBalance(currency: toCurrency, amount: toAmount))
                     }
@@ -90,8 +107,10 @@ struct ContentView: View {
                 
                 Spacer()
             }
-        }.toast(isPresenting: $shouldShowAlert, duration: 3) {
-            AlertToast(displayMode: .alert, type: .error(.red), title: "Balance can't be lower than 'from' amount")
+        }.toast(isPresenting: $shouldShowError, duration: 3) {
+            AlertToast(displayMode: .alert, type: .error(.red), title: "Balance Can't Be Lower Than 'from' Amount")
+        }.toast(isPresenting: $shouldShowSuccess) {
+            AlertToast(displayMode: .alert, type: .complete(.green), title: "Exchange Was Successful")
         }
     }
 }

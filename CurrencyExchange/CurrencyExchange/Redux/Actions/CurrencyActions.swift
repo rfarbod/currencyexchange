@@ -34,4 +34,16 @@ struct CurrencyActions {
         let fromAmount: Double
         let toCurrency: Currency
     }
+    
+    struct SetExchangeCount: Action {
+    
+    }
+    
+    struct SetTotalCommisson: Action {
+        let commissonAmount: Double
+    }
+    
+    struct SetCurrentCommission: Action {
+        let amount: Double
+    }
 }

@@ -16,4 +16,7 @@ struct CurrencyState: FluxState {
     var selectedToAmount: Double = 1.0
     var preLoadedToAmount = Balance(amount: 1, currency: Currency(with: .USD))
     var exchangeRate = ExchangeRate(fromCurrency: Currency(with: .USD), toCurrency: Currency(with: .USD), exchangeRate: 1)
+    var exchangeCount = 0
+    var totalExchangeComisson: Double = 0.0
+    var currentCommissionFee: Double = 0.0
 }

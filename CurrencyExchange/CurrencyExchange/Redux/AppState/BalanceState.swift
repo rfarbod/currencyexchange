@@ -16,4 +16,6 @@ struct BalanceState: FluxState {
         Balance(amount: 1000, currency: Currency(with: .GBP)),
         Balance(amount: 1000, currency: Currency(with: .JPY))
     ]
+    
+    
 }
