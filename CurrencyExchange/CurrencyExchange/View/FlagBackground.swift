@@ -12,6 +12,8 @@ struct FlagBackground: View {
     var body: some View {
         Image(image)
             .resizable()
+            .scaledToFill()
+            .frame(width: 225, height: 150)
             .clipped()
             .cornerRadius(20)
             .grayscale(0.8)

@@ -21,23 +21,30 @@ struct ContentView: View {
         return store.state.balanceState.balances
     }
     
+    init() {
+        UIPageControl.appearance().currentPageIndicatorTintColor = UIColor(.secondaryColor)
+        UIPageControl.appearance().pageIndicatorTintColor = UIColor(.mainColor)
+    }
+    
     var body: some View {
         ZStack {
             Color.mainColor.ignoresSafeArea()
             
             VStack(spacing: 15){
-                SectionTitle("Exchange")
+                Text("Exchange")
+                    .foregroundColor(.secondaryColor)
+                    .font(.largeTitle)
                     .padding(.top, 30)
                 
                 TabView(selection: $index) {
                     ForEach(0..<balances.count){ i in
                         BalanceView(currency: balances[i].currency, amount: balances[i].amount)
-                            .frame(width: 300, height: 200)
                             .tag(i)
+                            .frame(width: 225, height: 150)
                     }
                 }
-                .frame(height: 200)
-                .tabViewStyle(.page)
+                .frame(height: 175)
+                .tabViewStyle(.page(indexDisplayMode: .always))
                 .onChange(of: index) { newValue in
                     print(newValue)
                     store.dispatch(action: CurrencyActions.SetFromCurrency(fromCurrency: balances[index].currency))
@@ -45,13 +52,20 @@ struct ContentView: View {
                 }
                 
                 ExchangeView()
+                       
+                Text("Comission fee: \(0)")
+                    .foregroundColor(.secondaryColor)
+                    .font(.caption)
                 
-                Spacer()
+                Text("Total comission fee: \(0)")
+                    .foregroundColor(.secondaryColor)
+                    .font(.caption)
                 
                 Button(action: {}) {
                     Text("Exchange")
                         .fontWeight(.bold)
                 }.softButtonStyle(Capsule(), pressedEffect: .hard)
+                
                 Spacer()
             }
         }
