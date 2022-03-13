@@ -25,6 +25,9 @@ func currenyStateReducer(state: CurrencyState, action: Action) -> CurrencyState 
         let exchangeRate = state.exchangeRate.exchangeRate
         let desiredAmount = action.fromAmount * exchangeRate
         state.preLoadedToAmount = Balance(amount: desiredAmount, currency: action.toCurrency)
+        store.dispatch(action: CurrencyActions.SetToCurrencyAmount(toAmount: desiredAmount))
+    case let action as CurrencyActions.SetToCurrencyAmount:
+        state.selectedToAmount = action.toAmount
     default:
         break
     }

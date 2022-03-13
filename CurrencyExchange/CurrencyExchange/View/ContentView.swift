@@ -37,8 +37,8 @@ struct ContentView: View {
                     .padding(.top, 30)
                 
                 TabView(selection: $index) {
-                    ForEach(0..<balances.count){ i in
-                        BalanceView(currency: balances[i].currency, amount: balances[i].amount)
+                    ForEach(0..<balances.count, id: \.self ){ i in
+                        BalanceView(currency: balances[i].currency,amount: balances[i].amount)
                             .tag(i)
                             .frame(width: 225, height: 150)
                     }
@@ -47,6 +47,10 @@ struct ContentView: View {
                 .tabViewStyle(.page(indexDisplayMode: .always))
                 .onChange(of: index) { newValue in
                     print(newValue)
+                    store.dispatch(action: CurrencyActions.SetFromCurrency(fromCurrency: balances[index].currency))
+                    store.dispatch(action: BalanceActions.GetExchangeRate())
+                }
+                .onAppear {
                     store.dispatch(action: CurrencyActions.SetFromCurrency(fromCurrency: balances[index].currency))
                     store.dispatch(action: BalanceActions.GetExchangeRate())
                 }
@@ -61,10 +65,14 @@ struct ContentView: View {
                     .foregroundColor(.secondaryColor)
                     .font(.caption)
                 
-                Button(action: {}) {
+                Button(action: {
+                    store.dispatch(action: BalanceActions.SetBalance(currency: store.state.currencyState.selectedFromCurrency, amount: -(store.state.currencyState.selectedFromAmount)))
+                    store.dispatch(action: BalanceActions.SetBalance(currency: store.state.currencyState.selectedToCurrency, amount: store.state.currencyState.selectedToAmount))
+                }) {
                     Text("Exchange")
                         .fontWeight(.bold)
                 }.softButtonStyle(Capsule(), pressedEffect: .hard)
+    
                 
                 Spacer()
             }

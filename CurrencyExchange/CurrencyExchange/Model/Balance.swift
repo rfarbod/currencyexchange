@@ -8,7 +8,9 @@
 import Foundation
 
 
-struct Balance {
+struct Balance: Identifiable {
+    var id = UUID().uuidString
+    
     
     var amount: Double = 0
     var currency: Currency = Currency(with: .USD)

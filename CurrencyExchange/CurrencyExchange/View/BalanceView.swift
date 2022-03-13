@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import SwiftUIFlux
 
 struct BalanceView: View {
+    
+    @EnvironmentObject var store : Store<AppState>
+
     var currency: Currency
     var amount: Double
     

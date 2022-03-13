@@ -13,9 +13,9 @@ func balanceStateReducer(state: BalanceState, action: Action) -> BalanceState {
     switch action {
     case let action as BalanceActions.SetBalance:
         if let indexOfBalance = state.balances.firstIndex(where: { balance in
-            return balance.currency == action.currency
+            return balance.currency.symbol == action.currency.symbol
         }){
-            state.balances[indexOfBalance].amount = action.amount
+            state.balances[indexOfBalance].amount += action.amount
         }else{
             state.balances.append(Balance(amount: action.amount, currency: action.currency))
         }

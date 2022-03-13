@@ -18,6 +18,10 @@ struct CurrencyActions {
         let fromAmount: Double
     }
     
+    struct SetToCurrencyAmount: Action {
+        let toAmount: Double
+    }
+    
     struct SetToCurrency: Action {
         let toCurrency: Currency
     }
