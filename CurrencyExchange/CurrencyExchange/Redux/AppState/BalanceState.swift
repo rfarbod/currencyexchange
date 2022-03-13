@@ -10,5 +10,10 @@ import SwiftUIFlux
 
 struct BalanceState: FluxState {
     
-    var balances = [Balance]()
+    var balances = [
+        Balance(amount: 1000, currency: Currency(with: .USD)),
+        Balance(amount: 1000, currency: Currency(with: .EUR)),
+        Balance(amount: 1000, currency: Currency(with: .GBP)),
+        Balance(amount: 1000, currency: Currency(with: .JPY))
+    ]
 }

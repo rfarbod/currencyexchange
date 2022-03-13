@@ -6,15 +6,13 @@
 //
 
 import SwiftUI
+import Neumorphic
 
 struct OuterShadowBackground: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 20)
+            .fill(Color.mainColor)
+            .softOuterShadow()
     }
 }
 
-struct OuterShadowBackground_Previews: PreviewProvider {
-    static var previews: some View {
-        OuterShadowBackground()
-    }
-}

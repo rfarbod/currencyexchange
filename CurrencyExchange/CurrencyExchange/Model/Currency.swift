@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Currency: Equatable {
+struct Currency: Equatable, Identifiable,Hashable {
     
+    let id = UUID()
     let symbol: CurrencySymbols
     let code: CurrencyCodes
     
@@ -23,12 +24,14 @@ struct Currency: Equatable {
             symbol = .GBP
         case .JPY:
             symbol = .JPY
-        case .TRY:
-            symbol = .TRY
-        case .CHF:
-            symbol = .CHF
-        case .CAD:
-            symbol = .CAD
         }
+    }
+    
+    static func getAllCurrencies() -> [Currency] {
+        var allCurrencies = [Currency]()
+        for each in CurrencyCodes.allCases {
+            allCurrencies.append(Currency(with: each))
+        }
+        return allCurrencies
     }
 }

@@ -7,14 +7,10 @@
 
 import SwiftUI
 import SwiftUIFlux
-enum TextInputType {
-    case from
-    case to
-}
 
-struct TextInput: View {
+
+struct FromTextInput: View {
     @State  var text = ""
-    @State var textInputType = TextInputType.from
     
     @EnvironmentObject var store : Store<AppState>
     
@@ -30,14 +26,12 @@ struct TextInput: View {
             .background(OuterShadowBackground())
             .keyboardType(.decimalPad)
             .onChange(of: text) { newValue in
-                switch textInputType {
-                case .from:
+                
                     if let doubleNumber = Double(newValue) {
+                        store.dispatch(action: CurrencyActions.SetFromCurrencyAmount(fromAmount: doubleNumber))
                         store.dispatch(action: CurrencyActions.ConvertCurrency(fromAmount: doubleNumber, toCurrency: store.state.currencyState.selectedToCurrency))
-                    }
-                case .to:
-                    break
-                }
+                  
             }
     }
+}
 }

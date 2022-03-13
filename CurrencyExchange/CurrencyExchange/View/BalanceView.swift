@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct BalanceView: View {
+    var currency: Currency
+    var amount: Double
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        ZStack {
+            OuterShadowBackground()
 
-struct BalanceView_Previews: PreviewProvider {
-    static var previews: some View {
-        BalanceView()
+            FlagBackground(image: currency.code.rawValue)
+
+            HStack(alignment: .bottom, spacing: 2) {
+                Text("\(String(format: "%.2f", amount))")
+                    .foregroundColor(.secondaryColor)
+                    .font(.title)
+                    .bold()
+                   
+                Text(currency.symbol.rawValue)
+                    .foregroundColor(.secondaryColor)
+                    .font(.title2)
+                    .bold()
+                Spacer()
+            }
+            .padding(.leading, 15)
+        }
+        .padding()
     }
 }

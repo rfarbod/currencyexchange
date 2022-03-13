@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct FlagBackground: View {
+    var image: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(image)
+            .resizable()
+            .clipped()
+            .cornerRadius(20)
+            .grayscale(0.8)
+            .overlay(FlagGradient())
     }
 }
 
-struct FlagBackground_Previews: PreviewProvider {
-    static var previews: some View {
-        FlagBackground()
+fileprivate struct FlagGradient: View {
+    var body: some View {
+        LinearGradient(colors: [.mainColor,
+                                .mainColor.opacity(0.8),
+                                .mainColor.opacity(0.6),
+                                .mainColor.opacity(0.4),
+                                .mainColor.opacity(0.2),
+                                .clear],
+                       startPoint: .leading,
+                       endPoint: .trailing)
+            .cornerRadius(20)
     }
 }

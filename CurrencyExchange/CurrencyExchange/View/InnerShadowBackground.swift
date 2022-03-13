@@ -6,15 +6,12 @@
 //
 
 import SwiftUI
+import Neumorphic
 
 struct InnerShadowBackground: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct InnerShadowBackground_Previews: PreviewProvider {
-    static var previews: some View {
-        InnerShadowBackground()
+        RoundedRectangle(cornerRadius: 20)
+            .fill(Color.mainColor)
+            .softInnerShadow(RoundedRectangle(cornerRadius: 20))
     }
 }

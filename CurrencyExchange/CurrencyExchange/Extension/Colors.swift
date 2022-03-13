@@ -8,5 +8,6 @@
 import SwiftUI
 
 extension Color {
-    static var balanceBackground = Color("balanceBackgound")
+    static var mainColor = Color.Neumorphic.main
+    static var secondaryColor = Color.Neumorphic.secondary
 }

@@ -16,7 +16,15 @@ func currenyStateReducer(state: CurrencyState, action: Action) -> CurrencyState 
         state.selectedToCurrency = action.toCurrency
     case let action as CurrencyActions.SetFromCurrency:
         state.selectedFromCurrency = action.fromCurrency
-        state.desiredAmount = action.amount
+    case let action as CurrencyActions.SetFromCurrencyAmount:
+        state.selectedFromAmount = action.fromAmount
+    case let action as CurrencyActions.SetExchangeRate:
+        state.exchangeRate = ExchangeRate(fromCurrency: state.selectedFromCurrency, toCurrency: state.selectedToCurrency, exchangeRate: action.rate)
+        store.dispatch(action: CurrencyActions.ConvertCurrency(fromAmount: state.selectedFromAmount, toCurrency: state.selectedToCurrency))
+    case let action as CurrencyActions.ConvertCurrency:
+        let exchangeRate = state.exchangeRate.exchangeRate
+        let desiredAmount = action.fromAmount * exchangeRate
+        state.preLoadedToAmount = Balance(amount: desiredAmount, currency: action.toCurrency)
     default:
         break
     }

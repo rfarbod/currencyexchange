@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import SwiftUIFlux
 
 @main
 struct CurrencyExchangeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StoreProvider(store: store) {
+                ContentView()
+            }
         }
     }
 }

@@ -12,11 +12,22 @@ struct CurrencyActions {
     
     struct SetFromCurrency: Action {
         let fromCurrency: Currency
-        let amount: Double
+    }
+    
+    struct SetFromCurrencyAmount: Action {
+        let fromAmount: Double
     }
     
     struct SetToCurrency: Action {
         let toCurrency: Currency
     }
     
+    struct SetExchangeRate: Action {
+        let rate: Double
+    }
+    
+    struct ConvertCurrency: Action {
+        let fromAmount: Double
+        let toCurrency: Currency
+    }
 }

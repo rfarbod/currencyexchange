@@ -10,7 +10,7 @@ import Alamofire
 
 enum ExchangeAPIs: URLRequestBuilder {
     
-    case exchange(Double,CurrencyCodes,CurrencyCodes)
+    case exchange(CurrencyCodes,CurrencyCodes)
     
     
 }
@@ -18,8 +18,8 @@ enum ExchangeAPIs: URLRequestBuilder {
 extension ExchangeAPIs {
     var path: String {
         switch self {
-        case .exchange(let amoount, let fromCode, let toCode):
-            return Path.Exchange.exchangeCurrency(fromAmount: amoount, fromCurrency: fromCode, toCurrency: toCode)
+        case .exchange(let fromCode, let toCode):
+            return Path.Exchange.exchangeCurrency(fromAmount: 1000, fromCurrency: fromCode, toCurrency: toCode)
         }
     }
 }

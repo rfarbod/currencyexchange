@@ -30,10 +30,6 @@ public extension NetworkServiceProtocol {
             }
         }
     }
-    
-    
-    
-    
 }
 
 public class NetworkService: NetworkServiceProtocol {

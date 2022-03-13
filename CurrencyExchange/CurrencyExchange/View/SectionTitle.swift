@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct SectionTitle: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    var titleText = ""
+    init(_ text: String) {
+        titleText = text
     }
-}
-
-struct SectionTitle_Previews: PreviewProvider {
-    static var previews: some View {
-        SectionTitle()
+    var body: some View {
+        Text(titleText)
+            .foregroundColor(.secondaryColor)
+            .font(.largeTitle)
     }
 }

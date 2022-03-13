@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct ExchangeRate {
+    
+    var fromCurrency: Currency
+    var toCurrency: Currency
+    var exchangeRate: Double
+}
