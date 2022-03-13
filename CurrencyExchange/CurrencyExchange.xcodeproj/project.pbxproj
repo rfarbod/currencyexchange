@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		13338C9127DE078B00B8BD1D /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13338C9027DE078B00B8BD1D /* ExchangeRate.swift */; };
 		13338C9327DE1BC200B8BD1D /* ToTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13338C9227DE1BC200B8BD1D /* ToTextInput.swift */; };
+		13338C9827DEAE3A00B8BD1D /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 13338C9727DEAE3A00B8BD1D /* AlertToast */; };
 		1355659427DD3F0D007554D0 /* ExchangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659327DD3F0D007554D0 /* ExchangeView.swift */; };
 		1355659627DD3F88007554D0 /* FlagBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659527DD3F88007554D0 /* FlagBackground.swift */; };
 		1355659827DD3FB9007554D0 /* FromTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355659727DD3FB9007554D0 /* FromTextInput.swift */; };
@@ -114,6 +115,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13FAA77D27DA5060006BAA9D /* SwiftUIFlux in Frameworks */,
+				13338C9827DEAE3A00B8BD1D /* AlertToast in Frameworks */,
 				13FAA78027DA5087006BAA9D /* Alamofire in Frameworks */,
 				13FAA7BA27DBADA1006BAA9D /* Neumorphic in Frameworks */,
 			);
@@ -339,6 +341,7 @@
 				13FAA77C27DA5060006BAA9D /* SwiftUIFlux */,
 				13FAA77F27DA5087006BAA9D /* Alamofire */,
 				13FAA7B927DBADA1006BAA9D /* Neumorphic */,
+				13338C9727DEAE3A00B8BD1D /* AlertToast */,
 			);
 			productName = CurrencyExchange;
 			productReference = 13FAA74E27DA5041006BAA9D /* CurrencyExchange.app */;
@@ -416,6 +419,7 @@
 				13FAA77B27DA5060006BAA9D /* XCRemoteSwiftPackageReference "SwiftUIFlux" */,
 				13FAA77E27DA5087006BAA9D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				13FAA7B827DBADA1006BAA9D /* XCRemoteSwiftPackageReference "neumorphic" */,
+				13338C9627DEAE3A00B8BD1D /* XCRemoteSwiftPackageReference "AlertToast" */,
 			);
 			productRefGroup = 13FAA74F27DA5041006BAA9D /* Products */;
 			projectDirPath = "";
@@ -820,6 +824,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		13338C9627DEAE3A00B8BD1D /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		13FAA77B27DA5060006BAA9D /* XCRemoteSwiftPackageReference "SwiftUIFlux" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Dimillian/SwiftUIFlux";
@@ -847,6 +859,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		13338C9727DEAE3A00B8BD1D /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13338C9627DEAE3A00B8BD1D /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
 		13FAA77C27DA5060006BAA9D /* SwiftUIFlux */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 13FAA77B27DA5060006BAA9D /* XCRemoteSwiftPackageReference "SwiftUIFlux" */;

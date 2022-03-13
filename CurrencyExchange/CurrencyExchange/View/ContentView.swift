@@ -8,10 +8,12 @@
 import SwiftUI
 import SwiftUIFlux
 import Neumorphic
+import AlertToast
 
 struct ContentView: View {
     
     @State var index = 0
+    @State var shouldShowAlert: Bool = false
     @EnvironmentObject var store : Store<AppState>
     
     var fromCurrency: CurrencyCodes {
@@ -66,8 +68,20 @@ struct ContentView: View {
                     .font(.caption)
                 
                 Button(action: {
-                    store.dispatch(action: BalanceActions.SetBalance(currency: store.state.currencyState.selectedFromCurrency, amount: -(store.state.currencyState.selectedFromAmount)))
-                    store.dispatch(action: BalanceActions.SetBalance(currency: store.state.currencyState.selectedToCurrency, amount: store.state.currencyState.selectedToAmount))
+                    let fromCurrency = store.state.currencyState.selectedFromCurrency
+                    let fromAmount   = store.state.currencyState.selectedFromAmount
+                    let toCurrency   =  store.state.currencyState.selectedToCurrency
+                    let toAmount     =  store.state.currencyState.selectedToAmount
+                    let fromBalance  = store.state.balanceState.balances.first { balance in
+                        return balance.currency.symbol == fromCurrency.symbol
+                    }?.amount
+                    if fromAmount > fromBalance ?? 0 {
+                        shouldShowAlert = true
+                    }else {
+                    store.dispatch(action: BalanceActions.SetBalance(currency: fromCurrency, amount: -(fromAmount)))
+                    store.dispatch(action: BalanceActions.SetBalance(currency: toCurrency, amount: toAmount))
+                    }
+                    
                 }) {
                     Text("Exchange")
                         .fontWeight(.bold)
@@ -76,6 +90,8 @@ struct ContentView: View {
                 
                 Spacer()
             }
+        }.toast(isPresenting: $shouldShowAlert, duration: 3) {
+            AlertToast(displayMode: .alert, type: .error(.red), title: "Balance can't be lower than 'from' amount")
         }
     }
 }
