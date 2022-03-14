@@ -26,10 +26,7 @@ What i used to implement a neumorphic UI.
 # Screenshots
 
 <img src="/Screenshots/IMG_9250.PNG" alt="Dark home" title="Dark home" width="300" height="600">
-<img src="/Screenshots/IMG_9254.PNG" alt="Dark detail" title="Dark Detail" width="300" height="600">
-<br>
-<img src="/Screenshots/IMG_9251.PNG" alt="Light home" title="Light home" width="300" height="600">
-<img src="/Screenshots/IMG_9252.PNG" alt="Light detail" title="Light detail" width="300" height="600">
+
 
 
 
