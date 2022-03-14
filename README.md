@@ -1,22 +1,36 @@
 # Introduction
 
-This is a template for getting started with iOS development using GitLab and [fastlane](https://fastlane.tools/).
+This is a simple exchange app that lets people swap different currencies
+<br>
+I chose **Redux** as a design pattern for this project because of its testablity and maintainability.
+<br>
+I chose **SwiftUI** instead of UIKit because redux is a reactive architecture and SwiftUI is way more reactive-friendly and I think it's cool to try some new frameworks specially when developing non-production apps.
+<br>
+
 
 # Reference links
 
-- [GitLab CI Documentation](https://docs.gitlab.com/ee/ci/)
-- [Blog post: Android publishing with iOS and fastlane](https://about.gitlab.com/2019/03/06/ios-publishing-with-gitlab-and-fastlane/)
+https://github.com/kitasuke/SwiftUI-Flux
+<br>
+What i used to implement Redux. This library leverages Apple's **Combine** framework.
 
-# Getting started
+https://github.com/elai950/AlertToast
+<br>
+What i used to show errors and alerts to user in a SwiftUI Friendly way. 
 
-You'll need a working MacOS development environment with XCode 10 to use this
-template. You can find instructions to get up and running on the Apple [XCode website](https://developer.apple.com/xcode/).
+https://github.com/costachung/neumorphic
+<br>
+What i used to implement a neumorphic UI.
 
-If you want to use GitLab CI with your own MacOS runners (a requirement since we
-do not currently yet offer shared MacOS runners - follow [infrastructure#5294](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues/5294) for
-updates on that front) please read through the blog post above which will walk 
-you through everything you need to get up and running.
 
-## What's contained in this project
+# Screenshots
 
-This template contains a simple Food Tracker App based off of the [Start Developing iOS Apps (Swift) Lessons](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html). Where necessary the template has been upgraded to use Swift 4. The app displays a list of meals consisting of a name, rating, and photo. Users are able to add or edit a meal by navigating to a detail screen. The app also includes a lightweight solution for basic data persistence.
+<img src="/Screenshots/IMG_9250.PNG" alt="Dark home" title="Dark home" width="300" height="600">
+<img src="/Screenshots/IMG_9254.PNG" alt="Dark detail" title="Dark Detail" width="300" height="600">
+<br>
+<img src="/Screenshots/IMG_9251.PNG" alt="Light home" title="Light home" width="300" height="600">
+<img src="/Screenshots/IMG_9252.PNG" alt="Light detail" title="Light detail" width="300" height="600">
+
+
+
+
