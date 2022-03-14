@@ -43,10 +43,6 @@ func currenyStateReducer(state: CurrencyState, action: Action) -> CurrencyState 
         
         state.exchangeCount += 1
         
-    case let action as CurrencyActions.SetTotalCommisson:
-        
-        state.totalExchangeComisson += action.commissonAmount
-        
     case let action as CurrencyActions.SetCurrentCommission:
         
         state.currentCommissionFee = action.amount

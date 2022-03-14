@@ -39,9 +39,7 @@ struct CurrencyActions {
     
     }
     
-    struct SetTotalCommisson: Action {
-        let commissonAmount: Double
-    }
+
     
     struct SetCurrentCommission: Action {
         let amount: Double
