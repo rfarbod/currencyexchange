@@ -85,16 +85,18 @@ struct ContentView: View {
                     let fromBalance  = store.state.balanceState.balances.first { balance in
                         return balance.currency.symbol == fromCurrency.symbol
                     }?.amount
+                    store.dispatch(action: CurrencyActions.SetCurrentCommission(amount: (0.7/100) * fromAmount))
+                    if store.state.currencyState.exchangeCount >= 5 {
+                        fromAmount += currentCommissionFee
+                    }
                     if fromAmount > fromBalance ?? 0 {
                         shouldShowError = true
                         shouldShowSuccess = false
-                    }else {
+                    }else{
                         shouldShowError = false
                         shouldShowSuccess = true
-                        if store.state.currencyState.exchangeCount >= 5 {
-                            fromAmount += currentCommissionFee
-                            store.dispatch(action: CurrencyActions.SetCurrentCommission(amount: (0.7/100) * fromAmount))
-                        }
+                    }
+                    if shouldShowSuccess {
                     store.dispatch(action: CurrencyActions.SetExchangeCount())
                     store.dispatch(action: BalanceActions.SetBalance(currency: fromCurrency, amount: -(fromAmount)))
                     store.dispatch(action: BalanceActions.SetBalance(currency: toCurrency, amount: toAmount))

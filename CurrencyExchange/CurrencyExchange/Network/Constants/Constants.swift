@@ -10,7 +10,7 @@ import Foundation
 
 enum Path {
     
-    enum Exchange {
+    enum Exchange { 
         public static func exchangeCurrency(fromAmount: Double, fromCurrency: CurrencyCodes, toCurrency: CurrencyCodes) -> String {
             return "exchange/\(fromAmount)-\(fromCurrency.rawValue)/\(toCurrency.rawValue)/latest"
         }
